@@ -1,0 +1,195 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}
+<title>Inicio | ConchiCoaching</title>
+{% endblock title %}
+
+
+
+{% block main %}
+{% include "navbar.html" %}
+
+  <!-- ============================================--><!-- <section> begin ============================-->
+  <section class="py-0 overflow-hidden" id="banner" data-bs-theme="light">
+    <div class="bg-holder overlay h-100" style="background-image:url('media/img/bginicio.jpg');background-position: center; background-size: center;"></div><!--/.bg-holder-->
+    <div class="container">
+      <div class="row flex-center pt-8 pt-lg-10 pb-lg-9 pb-xl-0">
+        <div class="col-md-11 col-lg-8 col-xl-4 pb-7 pb-xl-9 text-center text-xl-start">
+            
+          <h1 class="text-white fw-light">Trae <span class="typed-text fw-bold" data-typed-text='["paz","serenidad","felicidad","progreso"]'></span><br />a tu vida.</h1>
+          <p class="lead text-white opacity-75">Todo lo que necesitas lo tienes en tu interior, te ayudaré a encontrarlo emocionalmente.</p><a class="btn btn-outline-light border-2 rounded-pill btn-lg mt-4 fs-0 py-2" href="#!">¡Contactar ahora!<span class="fas fa-play ms-2" data-fa-transform="shrink-6 down-1"></span></a>
+        </div>
+
+      </div>
+    </div><!-- end of .container-->
+  </section><!-- <section> close ============================--><!-- ============================================-->
+
+
+
+  <!-- ============================================--><!-- <section> begin ============================-->
+  <section>
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8 col-xl-7 col-xxl-6">
+          <h1 class="fs-2 fs-sm-4 fs-md-5">Talleres a medida para grupos</h1>
+          <p class="lead">Experta en realizar talleres para grupos de personas, tanto para empresas como particulares.</p>
+        </div>
+      </div>
+      <div class="row flex-center mt-8">
+        <div class="col-md col-lg-5 col-xl-4 ps-lg-6"><img class="img-fluid px-6 px-md-0" src="/media/img/undraw_mindfulness_8gqa.svg" alt="" /></div>
+        <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
+          <h5 class="text-danger"><span class="far fa-heart me-2"></span></h5>
+          <h3>Manejo del Estrés y Bienestar Emocional</h3>
+          <p>Descubre el equilibrio perfecto entre serenidad y bienestar emocional a través de poderosas herramientas de manejo del estrés. ¡Transforma tu vida hoy!</p>
+        </div>
+      </div>
+      <div class="row flex-center mt-7">
+        <div class="col-md col-lg-5 col-xl-4 pe-lg-6 order-md-2"><img class="img-fluid px-6 px-md-0" src="/media/img/undraw_creative_thinking_re_9k71.svg" alt="" /></div>
+        <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
+          <h5 class="text-info"> <span class="far fa-smile me-2"></span></h5>
+          <h3>Desarrollo de Habilidades de Adaptabilidad</h3>
+          <p>Ayudo a afrontar los problemas y situaciones de la vida con una sonrisa en la boca.</p>
+        </div>
+      </div>
+      <div class="row flex-center mt-7">
+        <div class="col-md col-lg-5 col-xl-4 ps-lg-6"><img class="img-fluid px-6 px-md-0" src="/media/img/undraw_couple_love_re_3fw6.svg" alt="" /></div>
+        <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
+          <h5 class="text-success"><span class="far fa-paper-plane me-2"></span></h5>
+          <h3>Mejora de Relaciones Interpersonales y Comunicación</h3>
+          <p>Potencia tus conexiones personales y eleva tu comunicación a nuevas alturas con nuestro programa de mejora de relaciones interpersonales. ¡Desata tu capacidad de conectar de manera significativa con los demás!</p>
+        </div>
+      </div>
+    </div><!-- end of .container-->
+  </section><!-- <section> close ============================--><!-- ============================================-->
+
+
+{% comment %} 
+  <!-- ============================================--><!-- <section> begin ============================-->
+  <section class="bg-body-tertiary dark__bg-opacity-50 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="fs-2 fs-sm-4 fs-md-5">Here's what's in it for you</h1>
+          <p class="lead">Things you will get right out of the box with Falcon.</p>
+        </div>
+      </div>
+      <div class="row mt-6">
+        <div class="col-lg-4">
+          <div class="card card-span h-100">
+            <div class="card-span-img"><span class="fab fa-sass fs-4 text-info"></span></div>
+            <div class="card-body pt-6 pb-4">
+              <h5 class="mb-2">Bootstrap 5.x</h5>
+              <p>Build your webapp with the world's most popular front-end component library along with Falcon's 32 sets of carefully designed elements.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-6 mt-lg-0">
+          <div class="card card-span h-100">
+            <div class="card-span-img"><span class="fab fa-node-js fs-5 text-success"></span></div>
+            <div class="card-body pt-6 pb-4">
+              <h5 class="mb-2">SCSS &amp; Javascript files</h5>
+              <p>With your purchased copy of Falcon, you will get all the uncompressed & documented SCSS and Javascript source code files.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-6 mt-lg-0">
+          <div class="card card-span h-100">
+            <div class="card-span-img"><span class="fab fa-gulp fs-6 text-danger"></span></div>
+            <div class="card-body pt-6 pb-4">
+              <h5 class="mb-2">Gulp based workflow</h5>
+              <p>All the painful or time-consuming tasks in your development workflow such as compiling the SCSS or transpiring the JS are automated.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- end of .container-->
+  </section><!-- <section> close ============================--><!-- ============================================-->
+
+ {% endcomment %}
+
+  <!-- ============================================--><!-- <section> begin ============================-->
+  <section class="bg-200 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="fs-2 fs-sm-4 fs-md-5">Ultimos posts</h1>
+          <p class="lead">Expresar es parte del camino emocional.</p>
+        </div>
+      </div>
+      <div class="row mb-3 g-3 mt-5">
+        <article class="col-md-6 col-xxl-4">
+          <div class="card h-100 overflow-hidden">
+            <div class="card-body p-0 d-flex flex-column justify-content-between">
+              <div>
+                <div class="hoverbox text-center"><img class="w-100 h-100 object-fit-cover" src="/media/img/bginicio.jpg" alt="">
+                </div>
+                <div class="p-3">
+                  <h5 class="fs-0 mb-2"><a class="text-1100" href="../../../app/e-learning/course/course-details.html">La Importancia de la Empatía Grupal</a></h5>
+                  <h5 class="fs-0"><a href="">Conchi Méndez Quesada</a></h5>
+                </div>
+              </div>
+              <div class="row g-0 mb-3 align-items-center justify-content-between">
+                <div class="col-auto ps-3">
+                  <p class="mb-0 fs--1 text-800">Tiempo de lectura: 8min</p>
+                </div>
+                <div class="col-auto pe-3"><a class="btn btn-sm btn-falcon-default me-2 hover-danger" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Me gusta" data-bs-original-title="¡Me gusta!"><svg class="svg-inline--fa fa-heart fa-w-16" data-fa-transform="down-2" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.625em;"><g transform="translate(256 256)"><g transform="translate(0, 64)  scale(1, 1)  rotate(0 0 0)"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="far fa-heart" data-fa-transform="down-2"></span> Font Awesome fontawesome.com --></a></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-6 col-xxl-4">
+          <div class="card h-100 overflow-hidden">
+            <div class="card-body p-0 d-flex flex-column justify-content-between">
+              <div>
+                <div class="hoverbox text-center"><img class="w-100 h-100 object-fit-cover" src="/media/img/bginicio.jpg" alt="">
+                </div>
+                <div class="p-3">
+                  <h5 class="fs-0 mb-2"><a class="text-1100" href="../../../app/e-learning/course/course-details.html">Inspirando a través de la Inteligencia Emocional Grupal</a></h5>
+                  <h5 class="fs-0"><a href="">Conchi Méndez Quesada</a></h5>
+                </div>
+              </div>
+              <div class="row g-0 mb-3 align-items-center justify-content-between">
+                <div class="col-auto ps-3">
+                  <p class="mb-0 fs--1 text-800">Tiempo de lectura: 12min</p>
+                </div>
+                <div class="col-auto pe-3"><a class="btn btn-sm btn-falcon-default me-2 hover-danger" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Me gusta" data-bs-original-title="¡Me gusta!"><svg class="svg-inline--fa fa-heart fa-w-16" data-fa-transform="down-2" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.625em;"><g transform="translate(256 256)"><g transform="translate(0, 64)  scale(1, 1)  rotate(0 0 0)"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="far fa-heart" data-fa-transform="down-2"></span> Font Awesome fontawesome.com --></a></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-6 col-xxl-4">
+          <div class="card h-100 overflow-hidden">
+            <div class="card-body p-0 d-flex flex-column justify-content-between">
+              <div>
+                <div class="hoverbox text-center"><img class="w-100 h-100 object-fit-cover" src="/media/img/bginicio.jpg" alt="">
+                </div>
+                <div class="p-3">
+                  <h5 class="fs-0 mb-2"><a class="text-1100" href="../../../app/e-learning/course/course-details.html">Transformando Desafíos en Oportunidades de Crecimiento</a></h5>
+                  <h5 class="fs-0"><a href="">Conchi Méndez Quesada</a></h5>
+                </div>
+              </div>
+              <div class="row g-0 mb-3 align-items-center justify-content-between">
+                <div class="col-auto ps-3">
+                  <p class="mb-0 fs--1 text-800">Tiempo de lectura: 6min</p>
+                </div>
+                <div class="col-auto pe-3"><a class="btn btn-sm btn-falcon-default me-2 hover-danger" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Me gusta" data-bs-original-title="¡Me gusta!"><svg class="svg-inline--fa fa-heart fa-w-16" data-fa-transform="down-2" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.625em;"><g transform="translate(256 256)"><g transform="translate(0, 64)  scale(1, 1)  rotate(0 0 0)"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="far fa-heart" data-fa-transform="down-2"></span> Font Awesome fontawesome.com --></a></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      
+    </div><!-- end of .container-->
+  </section><!-- <section> close ============================--><!-- ============================================-->
+
+
+    
+
+
+  {% include "footer.html" %}
+
+  <!-- ============================================--><!-- <section> begin ============================-->
+  
+
+
+{% endblock main %}
