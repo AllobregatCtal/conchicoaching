@@ -1,0 +1,89 @@
+{% extends "index.html" %}
+
+{% block title %}
+<title>Contacto | ConchiCoaching</title>
+{% endblock title %}
+
+{% block main %}
+{% include "navbar.html" %}
+
+<section class="py-0 overflow-hidden" id="banner" data-bs-theme="light">
+    <div class="bg-holder overlay h-100" style="background-image:url('media/img/bginicio.jpg');background-position: center; background-size: center;"></div><!--/.bg-holder-->
+    <div class="container">
+      <div class="row flex-center pt-8 pt-lg-10 pb-lg-9 pb-xl-0">
+        <div class="col-md-11 col-lg-8 col-xl-4 pb-7 pb-xl-9 text-center text-xl-start">
+          
+          <h1 class="text-white fw-light">¡Contacta conmigo ahora!</h1>
+
+          
+        </div>
+        
+      </div>
+    </div><!-- end of .container-->
+  </section><!-- <section> close ============================--><!-- ============================================-->
+    
+
+<section id="contact" class="contact">
+    <div class="container">
+
+ 
+
+      <div class="row mt-5">
+
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Ubicación:</h4>
+              <p>Vera, Almería</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@conchicoaching.es</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Llámame:</h4>
+              <p>618 611 700</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Tu email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+            </div>
+          {% comment %}   <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div> {% endcomment %}
+            <div class="text-center mt-5"><button class="btn btn-outline-primary" type="submit">Enviar mensaje</button></div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+{% include "footer.html" %}
+{% endblock main %}
