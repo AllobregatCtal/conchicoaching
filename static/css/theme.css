@@ -338,7 +338,7 @@ thead>.fc .fc-scrollgrid-section,
   --color-turquesa: #FF007F;
   --color-turquesa-claro: #EFFFFC;
   --color-turquesa-hover: #FF55A3;
-  --color--azul: #143442;
+  --color--azul: #07214f;
   --color--azul-oscuro: #869AA3;
   --color--azul-claro: #E4EFF4;
   --color--gris: #676767;
@@ -652,8 +652,8 @@ thead>.fc .fc-scrollgrid-section,
   --falcon-warning-rgb: 245, 128, 62;
   --falcon-danger-rgb: 230, 55, 87;
   --falcon-light-rgb: 249, 250, 253;
-  --falcon-dark-rgb: 11, 23, 39;
-  --falcon-primary-text-emphasis: #12315c;
+  --falcon-dark-rgb: 212, 0, 111;
+  --falcon-primary-text-emphasis: var(--color-turquesa-hover);
   --falcon-secondary-text-emphasis: #2e343b;
   --falcon-success-text-emphasis: #005431;
   --falcon-info-text-emphasis: #104b65;
@@ -704,7 +704,7 @@ thead>.fc .fc-scrollgrid-section,
   --falcon-link-color: var(--color-principal);
   --falcon-link-color-rgb: 44, 123, 229;
   --falcon-link-decoration: none;
-  --falcon-link-hover-color: #143442;
+  --falcon-link-hover-color: var(--color-secundario-oscuro);
   --falcon-link-hover-color-rgb: 35, 98, 183;
   --falcon-link-hover-decoration: underline;
   --falcon-code-color: #ff679b;
@@ -876,7 +876,7 @@ thead>.fc .fc-scrollgrid-section,
   --falcon-linkedin-rgb: 0, 119, 181;
   --falcon-youtube-rgb: 255, 0, 1;
   --falcon-github-rgb: 51, 51, 51;
-  --falcon-dark-rgb: 11, 23, 39;
+  --falcon-dark-rgb: var(--color-secundario-oscuro);
   --falcon-light-rgb: 249, 250, 253;
   /* -------------------------------- Font family ------------------------------- */
   --falcon-font-sans-serif: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2129,7 +2129,7 @@ body {
   line-height: var(--falcon-body-line-height);
   color: var(--falcon-body-color);
   text-align: var(--falcon-body-text-align);
-  background-color: var(--color--azul-claro);
+  background-color: #F0F0F0;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -14683,6 +14683,11 @@ html[data-bs-theme=dark] .tox .tox-dialog__footer .tox-button--secondary,
 .text-white {
   --falcon-text-opacity: 1;
   color: rgba(var(--falcon-gray-white-rgb), var(--falcon-text-opacity)) !important;
+}
+
+.text-pink {
+  --falcon-text-opacity: 1;
+  color: var(--color-principal) !important;
 }
 
 .text-muted {
@@ -31204,7 +31209,7 @@ html[data-bs-theme=dark] .select2-results__option.select2-results__option--highl
 
 .picmo__picker.picmo__picker {
   width: 18.75rem;
-  --background-color: #fff;
+  --background-color: #F0F0F0;
   --category-name-background-color: var(--falcon-white);
   --border-color: var(--falcon-border-color);
   --category-tab-color: var(--falcon-gray-700);

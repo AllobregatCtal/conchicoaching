@@ -8,7 +8,7 @@
           </li>
           <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}" role="button" id="blog">Blog</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="apps">Contacto</a>
+          <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}" role="button" id="contact">Contacto</a>
           </li>
        
        
@@ -30,13 +30,13 @@
                   <form>
                     <div class="mb-3"><input class="form-control" type="email" placeholder="Email" /></div>
                     <div class="mb-3"><input class="form-control" type="password" placeholder="Contraseña" /></div>
-                    <div class="row flex-between-center">
+                   {% comment %}  <div class="row flex-between-center">
                       <div class="col-auto">
                         <div class="form-check mb-0"><input class="form-check-input" type="checkbox" id="modal-checkbox" /><label class="form-check-label mb-0" for="modal-checkbox">Recuerdame</label></div>
                       </div>
                       <div class="col-auto"><a class="fs--1" href="../pages/authentication/simple/forgot-password.html">¿Olvidaste la contraseña?</a></div>
-                    </div>
-                    <div class="mb-3"><button class="btn btn-primary d-block w-100 mt-3" type="submit" name="submit">Acceder</button></div>
+                    </div> {% endcomment %}
+                    <div class="mb-3"><button class="btn btn-primary d-block w-100 mt-3" style="color: white !important" type="submit" name="submit">Acceder</button></div>
                   </form>
             
                 </div>
