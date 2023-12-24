@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-s0d&4xwsbb2x7jxb^kuk)0zyv&w(uy@8kkbmsxyr^$8l1rnl4*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'conchicoaching.es', 'www.conchicoaching.es', 'localhost', '127.0.0.1', '15.237.159.6:8001', 'www.shadowserver.org']
+ALLOWED_HOSTS = ['conchicoaching.es', 'www.conchicoaching.es', 'localhost',
+                 '127.0.0.1', '15.237.159.6:8001', 'www.shadowserver.org', '*']
 
 
 # Application definition
@@ -119,18 +120,17 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-#URL to use when referring to static files located in STATIC_ROOT.
+# URL to use when referring to static files located in STATIC_ROOT.
 STATIC_URL = 'staticfiles/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
-#This setting defines the additional locations the staticfiles app will traverse if the FileSystemFinder finder is enabled, 
+# This setting defines the additional locations the staticfiles app will traverse if the FileSystemFinder finder is enabled,
 # e.g. if you use the collectstatic or findstatic management command or use the static file serving view.
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
 
 
 # Default primary key field type
